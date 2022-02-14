@@ -158,29 +158,29 @@
       var snowNum = 300;
 
       function init() {
-        camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 1, 10000);
-        camera.position.z = 1000;
-        scene = new THREE.Scene();
-        scene.add(camera);
-        renderer = new THREE.CanvasRenderer();
+        // camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 1, 10000);
+        // camera.position.z = 1000;
+        // scene = new THREE.Scene();
+        // scene.add(camera);
+        // renderer = new THREE.CanvasRenderer();
         renderer.setSize(containerWidth, containerHeight);
-        for (var i = 0; i < snowNum; i++) {
-          var material = new THREE.ParticleBasicMaterial({
-            map: new THREE.Texture(particleImages[i % 5])
-          });
-          particle = new Particle3D(material);
-          particle.position.x = Math.random() * 2000 - 1000;
-          particle.position.y = Math.random() * 2000 - 1000;
-          particle.position.z = Math.random() * 2000 - 1000;
-          particle.scale.x = particle.scale.y = 1;
-          scene.add(particle);
-          particles.push(particle)
-        }
+        // for (var i = 0; i < snowNum; i++) {
+        //   var material = new THREE.ParticleBasicMaterial({
+        //     map: new THREE.Texture(particleImages[i % 5])
+        //   });
+        //   particle = new Particle3D(material);
+        //   particle.position.x = Math.random() * 2000 - 1000;
+        //   particle.position.y = Math.random() * 2000 - 1000;
+        //   particle.position.z = Math.random() * 2000 - 1000;
+        //   particle.scale.x = particle.scale.y = 1;
+        //   scene.add(particle);
+        //   particles.push(particle)
+        // }
         container.appendChild(renderer.domElement);
         document.addEventListener("mousemove", onDocumentMouseMove, false);
         document.addEventListener("touchstart", onDocumentTouchStart, false);
         document.addEventListener("touchmove", onDocumentTouchMove, false);
-        setInterval(loop, 1000 / 50)
+        // setInterval(loop, 1000 / 50)
       }
 
       function onDocumentMouseMove(event) {

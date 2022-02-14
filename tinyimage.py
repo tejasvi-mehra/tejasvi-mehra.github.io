@@ -1,5 +1,6 @@
 import os
 # import time
+# 
 from glob import glob
 from PIL import Image
 import pyperclip
@@ -12,7 +13,7 @@ filenames = glob('{}/*.[jp]*'.format(source_dir))
 # print(','.join(filenames))
 strFileNames = ''
 for i,filename  in enumerate(filenames):
-  # 拼接文件名字符串
+  # 
   strFileNames = strFileNames +  '"' + filename +'",'
   filesize = os.path.getsize(filename)
   output_filename = filename.replace(source_dir, target_dir)
@@ -32,7 +33,7 @@ for i,filename  in enumerate(filenames):
     with Image.open(filename) as im:
       im.save(output_filename)
 
-# 字符串复制到剪切板
+# 
 strFileNames = strFileNames.replace(source_dir + '\\', './' + target_dir + '/')
 print(strFileNames[0:-1]);
 pyperclip.copy(strFileNames[0:-1]);
