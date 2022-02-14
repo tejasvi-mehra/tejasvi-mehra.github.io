@@ -1,30 +1,26 @@
-/* 图标 */
-
-@font-face {
+/* @font-face {
   font-family: 'iconfont';
   /* project id 669713 */
-  src: url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.eot');
-  src: url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.woff2') format('woff2'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.woff') format('woff'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.ttf') format('truetype'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.svg#iconfont') format('svg');
-}
+  /* src: url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.eot');
+  src: url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.woff2') format('woff2'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.woff') format('woff'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.ttf') format('truetype'), url('//at.alicdn.com/t/font_669713_r7pgq0vmjqc.svg#iconfont') format('svg'); */
+/* } */ 
 
-/*载入字体*/
-
-@font-face {
-  font-family: 'JournalRegular';
+/* @font-face {
+  font-family: 'Archivo Narrow', sans-serif;;
   src: url('../font/CHERI___.TTF');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 .self-design {
-  font-family: "JournalRegular" !important;
+  font-family: 'Archivo Narrow', sans-serif !important;
   font-size: 16px;
   font-style: normal;
   z-index: 10001;
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
+  font-family: 'Archivo Narrow', sans-serif !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +30,7 @@
 
 body {
   position: relative;
-  background: #f7d7da;
+  background: #C5AACD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +47,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-/* 音频模块 */
 
 .music {
   width: 35px;
@@ -101,16 +95,14 @@ ul {
   height: 100%;
 }
 
-/* 图片{模块 */
-
 .banner {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  width: 75vw;
+  /* width: 75vw;
   max-height: 40vh;
   min-height: 200px;
-  max-width: 600px;
+  max-width: 600px; */
   /* width: 75%; */
   margin: 5vh;
   border: 10px solid #fff;
@@ -127,17 +119,18 @@ ul {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 5px;
+  bottom: 0px;
   left: 0;
-  font-size: 15px;
-  color: #fff
+  /* font-size: 15px; */
+  font-size: 3vw;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .banner img {
   width: 100%;
 }
-
-/* 日期模块 */
 
 .date {
   position: relative;
@@ -154,17 +147,20 @@ ul {
 }
 
 .intro {
-  font-size: 20px;
+  /* font-size: 26px; */
+  font-size: 5vw;
   margin-bottom: 20px;
-  color: #3E4149;
-  position: relative;
-  left: -10px;
+  color: #420025;
+  /* position: relative; */
+  /* left: -10px; */
 }
 
 .date>span {
-  font-size: 36px;
+  /* font-size: 18px; */
+  font-size: 9vw;
   position: relative;
   color: #3E4149;
+  text-align: center;
 }
 
 .date-text {
@@ -185,7 +181,7 @@ ul {
 
 .our-name {
   position: relative;
-  font-size: 32px;
+  font-size: 7vw;
   margin-top: 20px;
   color: #1c1c1d;
   display: flex;
@@ -194,6 +190,6 @@ ul {
 }
 
 .our-name>span {
-  color: #ff9999;
-  font-size: 48px;
+  color: #420025;
+  font-size: 7vw;
 }

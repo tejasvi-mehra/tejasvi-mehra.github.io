@@ -1,5 +1,5 @@
 /**
- * 计时器,每次重新计算效率有待优化
+ * Timer
  * @param  {[type]} target [description]
  * @param  {[type]} d      [description]
  * @param  {[type]} h      [description]
@@ -19,7 +19,7 @@ var countTime = function (target, d, h, m, s) {
 
 
 /**
- * 更改显示值
+ * Display value 
  * @param  {[type]} d [description]
  * @param  {[type]} h [description]
  * @param  {[type]} m [description]
@@ -27,10 +27,10 @@ var countTime = function (target, d, h, m, s) {
  * @return {[type]}   [description]
  */
 var _countTime = function (d, h, m, s) {
-    $('#' + d).text(diff[0]);
-    $('#' + h).text(diff[1]);
-    $('#' + m).text(diff[2]);
-    $('#' + s).text(diff[3]);
+    $('#' + d).text(diff[0] + ' Days,');
+    $('#' + h).text(diff[1] + ' Hours,');
+    $('#' + m).text(diff[2] + ' Minutes,');
+    $('#' + s).text(diff[3] + ' Seconds');
     diff[3] = (diff[3] + 1) % 60;
     if (diff[3] == 0) {
         diff[2] = (diff[2] + 1) % 60;
@@ -45,7 +45,7 @@ var _countTime = function (d, h, m, s) {
 
 
 /**
- * 计算差距的具体时间
+ * Time between photos
  * @param  {[type]} day [description]
  * @return {[type]}     [description]
  */

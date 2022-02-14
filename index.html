@@ -10,23 +10,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1,minimum-scale=1,user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="screen-orientation" content="portrait">
-  <meta name="description" content="一个记录我们在一起经过点点滴的idea">
-  <meta name="theme-color" content="#f7d7da">
-  <!-- 配置Open graph -->
+  <meta name="description" content="An idea that records our jouney together">
+  <meta name="theme-color" content="#DF98F2">
+  <!-- ConfigureOpen graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jackluson.github.io/to-lover-demo/">
-  <meta property="og:description" content="一个记录“我们在一起走过点点滴滴”的idea">
-  <meta property="og:title" content="宝贝,感谢你一直的陪伴！">
-  <meta property="og:image" content="https://jackluson.github.io/to-lover-demo/pic-icon.png">
+  <meta property="og:url" content="website">
+  <meta property="og:description" content="An idea that records our jouney together">
+  <meta property="og:title" content="I love you Sovina">
+  <meta property="og:image" content="website/pic-icon.png">
   <meta property="og:image:width" content="140">
   <meta property="og:image:height" content="109">
-  <title>宝贝,感谢你一直的陪伴！</title>
+  <title>Happy Bearentines</title>
   <style>
     html,body,.snow{
-    height: 100%;
+    /* height: 100%;
     width: 100%;
-    overflow: hidden;
-    margin: 0;
+    overflow: hidden; */
+    margin: 10px;
   }
 </style>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -35,38 +35,44 @@
   <script type="text/javascript" src="./js/jquery.js"></script>
   <script type="text/javascript" src="./js/three.js"></script>
   <script src="./js/count-time.js"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="music">
     <i class="iconfont music-close">&#xea28;</i>
-    <!-- <audio class="audio" src="./media/dongxi-md.mp3" preload autoplay loop></audio>  -->
     <audio class="audio" preload autoplay loop>
-      <source src="./media/zui-mei-qing-lv-cut.mp3" type="audio/mp3" /> Your browser does not support the audio element.</audio> 
+      <source src="./media/perfect.mp3" type="audio/mp3" /> Your browser does not support the audio element.</audio> 
   </div>
   <div class="banner ovh">
     <div class="swiper-wrap">
-      <!-- <img src="./images/DSC_0692_mix01.jpg" alt=""> -->
-      <!-- <img src="./img/20180319230435.jpg" alt=""> -->
-      <img id="current-img" src="./images/adult-bicycle-bike-1878704.jpg" alt="">
-      <p class="img-intro">让我们放飞梦想,扬帆起航</p>
+      <!-- <img src="./images/grumpy.jpg" alt=""> -->
+      <!-- <img src="./images/hikey.jpg" alt=""> -->
+      <!-- <img src="./images/pizza.jpg" alt=""> -->
+      <!-- <img src="./images/sillies.jpg" alt=""> -->
+      <!-- <img src="./images/strawberry.jpg" alt=""> -->
+      <!-- <img src="./images/cake.jpg" alt=""> -->
+      <img id="current-img" src="./images/Bhenchod-fav-person.jpg" alt="">
+      <p class="img-intro">Bears forever</p>
     </div>
     <!-- <video class="video hide" webkit-playsinline="" playsinline="" x5-playsinline="" controls loop src=""></video> -->
   </div>
-  <p class="intro self-design">the times we together</p>
+  <p class="intro self-design">ʕ•ᴥ•ʔ We have been bears since ʕ•ᴥ•ʔ</p>
   <p class="date self-design">
-    <span id="day" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="days">/&nbsp;</span>
+    <span id="day" class="time-font"> days</span>
+    <!-- <span class="date-icon" style="color:#DF98F2" data-text="days">/&nbsp;</span> -->
     <span id="hour" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="hours">/&nbsp;</span>
+    <!-- <span class="date-icon" style="color:#DF98F2" data-text="hours">/&nbsp;</span> -->
     <span id="minute" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="min">/&nbsp;</span>
+    <!-- <span class="date-icon" style="color:#DF98F2" data-text="min">/&nbsp;</span> -->
     <span id="second" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="sec">/&nbsp;</span>
+    <!-- <span class="date-icon" style="color:#DF98F2" data-text="sec">/&nbsp;</span> -->
   </p>
-  <p class="svg">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="9001302152" x="0px"
+  <img style="width: 24vw;padding-top: 20px" src='./images/beary-much.png' />
+  <!-- <p class="svg">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="9001302153" x="0px"
       y="0px" width="100%" height="100%" viewBox="0 0 141.4 69.4" style="enable-background:new 0 0 141.4 69.4;" xml:space="preserve"
       preserveAspectRatio="none" class="element svg-element">
       <g>
@@ -78,25 +84,25 @@
         <path style="fill:#FF3939;" d="M100.8,34.7c-0.2-2.7-0.4-5.5-1.1-8c-0.3-0.9-1.6-0.7-1.6,0.2c0,1.8,2.3,18.2-0.9,17.6   c-0.2,0-0.4,0-0.6,0.1c-3-2.3-2.3-14.4-2.8-16.7c-0.1-0.6-0.9-0.5-1.1,0c-0.8,2.7-1.1,24,5.9,18.7c0.1-0.1,0.2-0.2,0.3-0.3   c1.3-0.5,2-1.8,2.3-3.5C101.4,40.2,101,37.3,100.8,34.7z"></path>
       </g>
     </svg>
-  </p>
-  <p class="our-name self-design">Lu <span>&</span> Deng</p>
+  </p> -->
+  <p class="our-name self-design">Sov <span>&</span> Teja</p>
   <script type="text/javascript">
-    //设置起始日期
-    countTime('2017/02/12 00:00', 'day', 'hour', 'minute', 'second');
+    // start date 
+    countTime('2020/09/19 00:00', 'day', 'hour', 'minute', 'second');
     var days = parseInt($('#day').text());
     var years = new Date().getFullYear();
     var month = new Date().getMonth() + 1;
     var dateDay = new Date().getDate();
-    // 设置标题
-    if (month == 2 && dateDay == 12) {
-      $(document).attr("title", "在一起" + parseInt(years - 2017) + "年,始于初见,终于到老。");
-    } else if (dateDay == 12) {
-      $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,始于初见,终于到老。");
-    } else
-    $(document).attr("title", "在一起" + days + "天,始于初见,终于到老。");
-    document.writeln(
-      "<div class=\"snow\" style=\"height:100%; position:fixed; left:0px; top:0px;right:0px; bottom:0px; pointer-events: none;z-index: 9999;\"><canvas width=\"1904\" height=\"913\" style=\"position:absolute;left: 0;top: 0;\"></canvas></div>"
-    );
+    // Set title
+    // if (month == 2 && dateDay == 12) {
+    //   $(document).attr("title", "Year" + parseInt(years - 2020) + "Years after");
+    // } else if (dateDay == 12) {
+    //   $(document).attr("title", "Months" + parseInt(days / 30) + "months after");
+    // } else
+    // $(document).attr("title", "Days" + days + "days after");
+    // document.writeln(
+    //   "<div class=\"snow\" style=\"height:100%; position:fixed; left:0px; top:0px;right:0px; bottom:0px; pointer-events: none;z-index: 9999;\"><canvas width=\"1904\" height=\"913\" style=\"position:absolute;left: 0;top: 0;\"></canvas></div>"
+    // );
 
     $(function () {
 
@@ -104,7 +110,6 @@
         return
       }
       var container = document.querySelector(".snow");
-      // IE9-10 pointer-events兼容
       if (/MSIE 9|MSIE 10/.test(navigator.userAgent)) {
         $(container).bind('click mousemove', function (evt) {
           this.style.display = 'none';
@@ -204,7 +209,6 @@
       function loop() {
         for (var i = 0; i < particles.length; i++) {
           var particle = particles[i];
-          // 滚动到楼层模块，减少雪花 （自定义）
           if ($(window).scrollTop() < 1000) {
             particle.scale.x = particle.scale.y = 1;
           } else {
@@ -253,10 +257,10 @@
   // var playVideo = document.querySelector('.our-name');
   var musicCloseDom = musicDom.querySelector('.music-close');
   var curImgDom = document.getElementById('current-img');
-  if ( audioDom.readyState == 4) { // android会走此逻辑
+  if ( audioDom.readyState == 4) { // Android
       // @todo
       console.log('loaded');
-  } else { // iOS走此逻辑
+  } else { // iOS
       audioDom.addEventListener('play', function () {
           try {
               musicCloseDom.classList.add('rotate');
@@ -266,8 +270,6 @@
       }, false);
       audioDom.addEventListener('canplaythrough', function () {
           try {
-              // chrome浏览器没有也页面交互（点击，滚动）之前会报错误---Uncaught（in promise）DOMException：play（）
-              //处理方法设置浏览器autoplay-policy---https://blog.csdn.net/super_XYQ/article/details/83026792
               var promise = audioDom.play();
               if (promise !== undefined) {
                   promise.then(function () {
@@ -315,9 +317,17 @@
       }
       
   }
-  var imgList = ['./images/adult-bicycle-bike-1878704.jpg', './images/alone-boulders-idyllic-426893.jpg', './images/back-view-blur-carefree-1892512.jpg', './images/balance-clothes-colors-1882003.jpg', './images/bowl-cooking-cuisine-1640773.jpg', './images/camera-lens-clouds-hand-1208074.jpg', './images/louie-castro-garcia-1355308-unsplash.jpg'];
-  var imgDescList = ['让我们携手放飞梦想,扬帆起航','想不到被我拍到了吧，最喜欢下班后吃到香喷喷的饭菜了。','TIT创意园,这够不够创意啦!<br>!','名师出高徒可不是闹着玩的。','第一次用抖音拍照，效果不赖吧！','宝贝,祝你在新的一年里红红火火，行大运！','七色彩圈,印证我们走过的点点滴滴'];
-  var isInitImage = false; //循环图片列表之后改了true,取消onload事件;
+      //   < !-- < img src = "./images/grumpy.jpg" alt = "" > -->
+      // < !-- < img src = "./images/hikey.jpg" alt = "" > -->
+      // < !-- < img src = "./images/pizza.jpg" alt = "" > -->
+      // < !-- < img src = "./images/sillies.jpg" alt = "" > -->
+      // < !-- < img src = "./images/strawberry.jpg" alt = "" > -->
+      // < !-- < img src = "./images/cake.jpg" alt = "" > -->
+
+  var imageList = []
+  var imgList = ['./images/grumpy.jpg', './images/cruise.jpg', './images/pizza.jpg', './images/lkf.jpg', './images/cake.jpg', './images/strawberry.jpg', './images/sillies.jpg'];
+  var imgDescList = ['My grumpiest little baby','The adventure at sea','My chef made a proper pizza but I had to get it made', 'The late nights at LKF','The time we made the best cake ',"One of my favorite dates was when we went strawberry picking ",'I love being silly with you and I love you the most'];
+  var isInitImage = false; //Change true after looping the picture list, cancel the onload event
   var imgIndex = 0;
   function setTimer(){
       var timer = setInterval(function() {
@@ -331,7 +341,7 @@
           }
           imgIndex = (imgIndex > (imgList.length - 1)) ? 0 : imgIndex;
           loadImage(imgIndex);
-      }, 3000);
+      }, 10000);
       return timer;
   }
   var timer= setTimer();

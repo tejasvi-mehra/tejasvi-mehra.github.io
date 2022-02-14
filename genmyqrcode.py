@@ -5,7 +5,7 @@ version, level, qr_name = myqr.run(
 	# 'https://jackluson.github.io/to-lover/',
     version=1,
     level='H',
-    picture='pic-icon.png',
+    picture='bear.jpg',
     colorized=True,
     contrast=1.0,
     brightness=1.0,
